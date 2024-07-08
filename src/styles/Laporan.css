@@ -2,22 +2,53 @@
   width: 100%;
   margin-top: 20px;
   overflow-x: auto; /* Memberi kemampuan scroll horizontal jika diperlukan */
+  border-collapse: collapse;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
 }
 
 .laporan th {
-  background-color: #007bff;
+  background-color: gray;
   color: #fff;
   white-space: nowrap; /* Agar teks dalam header tidak memisah saat diwrap */
+  padding: 12px;
+  border-bottom: 2px solid #0056b3; /* Border bawah header */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
 }
 
 .laporan th,
 .laporan td {
   text-align: center;
-  padding: 8px; /* Padding tambahan untuk sel */
+  padding: 12px; /* Padding tambahan untuk sel */
+  border-bottom: 1px solid #ddd; /* Menambahkan border bawah pada sel */
 }
 
 .laporan tbody tr:nth-child(even) {
   background-color: #f8f9fa;
+}
+
+.laporan tbody tr:hover {
+  background-color: #e2e6ea; /* Warna latar saat di-hover */
+  cursor: pointer; /* Menambahkan pointer cursor saat di-hover */
+  transition: background-color 0.3s; /* Animasi transisi saat di-hover */
+}
+
+.laporan td {
+  color: #495057;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .laporan {
+    width: 100%;
+    margin-left: 0; /* Menghilangkan margin kiri pada layar kecil */
+  }
+
+  .laporan th,
+  .laporan td {
+    font-size: 0.875rem; /* Mengurangi ukuran font untuk layar kecil */
+    padding: 8px; /* Mengurangi padding untuk layar kecil */
+  }
 }
 
 @media (min-width: 768px) {
