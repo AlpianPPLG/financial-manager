@@ -1,0 +1,37 @@
+.dashboard {
+  max-width: 100%; /* Panjang maksimal mengikuti lebar layar */
+  padding: 20px;
+  margin-left: 250px; /* Margin kiri setara dengan lebar Sidebar */
+  transition: margin-left 0.3s ease-in-out; /* Transisi untuk margin kiri */
+}
+
+.dashboard-card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.dashboard-card .card-body {
+  text-align: center;
+}
+
+.dashboard-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.dashboard-card .card-text {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .dashboard {
+    margin-left: 0; /* Hapus margin kiri saat tidak ada Sidebar */
+  }
+}

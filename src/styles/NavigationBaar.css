@@ -1,0 +1,12 @@
+.navbar {
+  margin-left: 250px; /* Sesuaikan dengan lebar Sidebar */
+  width: calc(100% - 250px); /* Panjang Navbar dikurangi lebar Sidebar */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .navbar {
+    margin-left: 0; /* Hapus margin kiri saat tidak ada Sidebar */
+    width: 100%; /* Navbar mengambil lebar penuh saat layar kecil */
+  }
+}

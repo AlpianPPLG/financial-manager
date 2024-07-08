@@ -1,0 +1,32 @@
+.form-transaksi {
+  max-width: calc(100% - 250px); /* Panjang maksimal dikurangi lebar Sidebar */
+  margin-left: 250px; /* Margin kiri setara dengan lebar Sidebar */
+  margin-right: auto;
+  padding: 20px;
+}
+
+.form-transaksi .form-group {
+  margin-bottom: 20px;
+}
+
+.form-transaksi .form-label {
+  font-weight: bold;
+}
+
+.form-transaksi .btn-tambah-transaksi {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+}
+
+.form-transaksi .btn-tambah-transaksi:hover {
+  background-color: #218838;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .form-transaksi {
+    max-width: 100%; /* Mengisi lebar layar penuh saat tidak ada Sidebar */
+    margin-left: 0; /* Hapus margin kiri saat tidak ada Sidebar */
+  }
+}

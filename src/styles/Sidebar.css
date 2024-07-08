@@ -1,0 +1,48 @@
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding-top: 1rem;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+  border-right: 1px solid #e9ecef;
+  z-index: 1000; /* Menempatkan sidebar di atas konten lain jika diperlukan */
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar .nav-link {
+  font-size: 1.2rem;
+  color: #495057;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.sidebar .nav-link:hover {
+  color: #007bff;
+  background-color: #e9ecef;
+}
+
+.sidebar .nav-item {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar .nav-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Hamburger Menu Styles for Small Screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    transform: translateX(-100%);
+    background-color: transparent; /* Background transparan untuk layar kecil */
+  }
+}

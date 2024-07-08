@@ -1,0 +1,40 @@
+.home {
+  max-width: calc(100% - 250px); /* Panjang maksimal dikurangi lebar Sidebar */
+  margin-left: 250px; /* Margin kiri setara dengan lebar Sidebar */
+  padding: 20px;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333; /* Contoh warna teks */
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Misalnya, tambahkan gaya untuk tombol jika dibutuhkan */
+.home .btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .home {
+    max-width: 100%; /* Mengisi lebar layar penuh saat tidak ada Sidebar */
+    margin-left: 0; /* Hapus margin kiri saat tidak ada Sidebar */
+  }
+}

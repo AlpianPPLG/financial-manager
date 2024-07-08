@@ -1,0 +1,30 @@
+.laporan {
+  width: 100%;
+  margin-top: 20px;
+  overflow-x: auto; /* Memberi kemampuan scroll horizontal jika diperlukan */
+}
+
+.laporan th {
+  background-color: #007bff;
+  color: #fff;
+  white-space: nowrap; /* Agar teks dalam header tidak memisah saat diwrap */
+}
+
+.laporan th,
+.laporan td {
+  text-align: center;
+  padding: 8px; /* Padding tambahan untuk sel */
+}
+
+.laporan tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+@media (min-width: 768px) {
+  .laporan {
+    max-width: calc(
+      100% - 250px
+    ); /* Panjang maksimal dikurangi lebar Sidebar */
+    margin-left: 250px; /* Margin kiri setara dengan lebar Sidebar */
+  }
+}
